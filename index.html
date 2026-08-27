@@ -77,21 +77,23 @@ body{font-family:'DM Sans',sans-serif;background:#F4EFE8;color:#382C23;max-width
 .cat-tag{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#9C5D3C;}
 .cat-name{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:#D1C7B5;line-height:1.2;}
 .cat-sub{font-size:11px;color:#D1C7B5;opacity:0.65;}
+.cat-desc{font-size:11px;color:#D1C7B5;opacity:0.65;font-family:'DM Sans',sans-serif;font-style:normal;text-transform:none;letter-spacing:0;line-height:1.4;margin-top:4px;display:block;}
 .cat-arr{font-size:16px;color:#B07E1E;flex-shrink:0;}
 
 /* INNER */
 .inner-hdr{background:#382C23;padding:22px 24px;display:flex;align-items:center;gap:14px;}
 .back{background:none;border:none;color:#D1C7B5;font-size:13px;font-family:'DM Sans',sans-serif;cursor:pointer;padding:0;letter-spacing:0.06em;white-space:nowrap;}
 .inner-hdr-tag{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#9C5D3C;margin-bottom:3px;}
-.inner-hdr-name{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;color:#D1C7B5;line-height:1.15;}
+.inner-hdr-name{font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#9C5D3C;line-height:1.3;}
+.inner-hdr-desc{font-size:11.5px;color:#D1C7B5;opacity:0.7;font-family:'DM Sans',sans-serif;font-style:normal;text-transform:none;letter-spacing:0;line-height:1.5;margin-top:6px;}
 .inner-body{padding:24px;}
 .inner-intro{font-size:13px;line-height:1.75;color:#382C23;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid rgba(56,44,35,0.1);}
 .prods-label{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6B41;margin-bottom:14px;}
 .prods{display:flex;flex-direction:column;gap:12px;}
-.prod{background:#fff;border:1px solid rgba(56,44,35,0.1);border-radius:8px;padding:20px;}
-.prod-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#382C23;margin-bottom:6px;line-height:1.2;}
-.prod-desc{font-size:12px;line-height:1.7;color:#6b5c50;margin-bottom:16px;}
-.cta{display:inline-block;background:#382C23;color:#D1C7B5;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;padding:10px 20px;border-radius:4px;text-decoration:none;}
+.prod{background:#382C23;border:1px solid rgba(56,44,35,0.1);border-radius:8px;padding:20px;}
+.prod-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#B07E1E;margin-bottom:6px;line-height:1.2;}
+.prod-desc{font-size:12px;line-height:1.7;color:#D1C7B5;margin-bottom:16px;}
+.cta{display:inline-block;background:#B07E1E;color:#382C23;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;padding:10px 20px;border-radius:4px;text-decoration:none;font-weight:600;}
 .inner-foot{padding:28px 24px;text-align:center;font-size:11px;color:#6E6B41;letter-spacing:0.08em;}
 </style>
 </head>
@@ -111,116 +113,39 @@ body{font-family:'DM Sans',sans-serif;background:#F4EFE8;color:#382C23;max-width
     </div>
   </div>
 
-  <div class="cats">
-    <button class="cat" onclick="show('diagnostico')">
-      <div class="cat-info">
-        <span class="cat-tag">Primeiro passo</span>
-        <span class="cat-name">Diagnóstico de Perfil</span>
-        <span class="cat-sub">Por onde começar</span>
-      </div>
-      <span class="cat-arr">→</span>
-    </button>
-    <button class="cat" onclick="show('equipes')">
-      <div class="cat-info">
-        <span class="cat-tag">Capacitação</span>
-        <span class="cat-name">Para Equipes de Atendimento</span>
-        <span class="cat-sub">Treinamento estratégico da recepção</span>
-      </div>
-      <span class="cat-arr">→</span>
-    </button>
-    <button class="cat" onclick="show('clinicas')">
-      <div class="cat-info">
-        <span class="cat-tag">Serviços</span>
-        <span class="cat-name">Para Clínicas e Doutores</span>
-        <span class="cat-sub">Gestão, conteúdo e aceleração digital</span>
-      </div>
-      <span class="cat-arr">→</span>
-    </button>
-  </div>
-</div>
-
-<!-- DIAGNÓSTICO -->
-<div id="diagnostico" class="page">
-  <div class="inner-hdr">
-    <button class="back" onclick="show('home')">← Voltar</button>
-    <div>
-      <div class="inner-hdr-tag">Primeiro passo</div>
-      <div class="inner-hdr-name">Diagnóstico de Perfil</div>
+  <div class="prods-label" style="padding:0 24px; margin-top:24px;">Serviços disponíveis</div>
+  <div class="prods" style="padding:0 24px 24px;">
+    <div class="prod">
+      <div class="prod-name">Análise de Perfil + Skill Personalizada</div>
+      <p class="prod-desc">Diagnóstico completo do seu perfil digital com entrega de uma estratégia personalizada para o seu nicho e momento. Ideal para quem quer clareza antes de investir em gestão ou conteúdo, e para doutores que ainda não sabem por onde começar.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=An%C3%A1lise+de+Perfil+%2B+Skill+Personalizada" target="_blank">Quero saber mais</a>
+    </div>
+    <div class="prod">
+      <div class="prod-name">Curadoria de Conteúdo</div>
+      <p class="prod-desc">Produção e curadoria de conteúdo estratégico para o perfil da sua clínica. Pautas, legendas e calendário editorial alinhados ao seu posicionamento e público-alvo, para que cada post comunique autoridade.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Curadoria+de+Conte%C3%BAdo" target="_blank">Quero saber mais</a>
+    </div>
+    <div class="prod">
+      <div class="prod-name">Macro Plano Avulso</div>
+      <p class="prod-desc">O mesmo planejamento estratégico da Curadoria, com a produção completa: calendário, copy e arte de cada peça, prontos pra publicar. Você recebe o mês inteiro fechado.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Macro+Plano+Avulso" target="_blank">Quero saber mais</a>
+    </div>
+    <div class="prod">
+      <div class="prod-name">Macro Plano Semestral</div>
+      <p class="prod-desc">A mesma entrega do Macro Plano Avulso, pensada com 6 meses de antecedência de uma vez. Mais previsibilidade, menos revisão constante, e um valor melhor fechando o semestre inteiro.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Macro+Plano+Semestral" target="_blank">Quero saber mais</a>
+    </div>
+    <div class="prod">
+      <div class="prod-name">Aceleração para Clínica</div>
+      <p class="prod-desc">Programa de 60 dias pra clínicas que querem crescer no digital de forma estruturada. Diagnóstico, plano de ação e treinamento pra sua equipe já aplicar com autonomia.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Acelera%C3%A7%C3%A3o+para+Cl%C3%ADnica" target="_blank">Quero saber mais</a>
+    </div>
+    <div class="prod">
+      <div class="prod-name">Gerenciamento de Redes</div>
+      <p class="prod-desc">Gestão completa das redes sociais da sua clínica: planejamento, produção de conteúdo, publicação e análise de desempenho. Você cuida dos pacientes, eu cuido da sua presença digital.</p>
+      <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Gerenciamento+de+Redes" target="_blank">Quero saber mais</a>
     </div>
   </div>
-  <div class="inner-body">
-    <p class="inner-intro">Antes de qualquer serviço, é preciso entender onde você está e para onde quer ir. A Análise de Perfil é o ponto de partida: um diagnóstico estratégico do seu posicionamento digital, com uma entrega personalizada para o seu momento e objetivo.</p>
-    <div class="prods-label">Serviço disponível</div>
-    <div class="prods">
-      <div class="prod">
-        <div class="prod-name">Análise de Perfil + Skill Personalizada</div>
-        <p class="prod-desc">Diagnóstico completo do seu perfil digital com entrega de uma estratégia personalizada para o seu nicho e momento. Ideal para quem quer clareza antes de investir em gestão ou conteúdo, e para doutores que ainda não sabem por onde começar.</p>
-        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=An%C3%A1lise+de+Perfil+%2B+Skill+Personalizada" target="_blank">Quero saber mais</a>
-      </div>
-    </div>
-  </div>
-  <div class="inner-foot">@analuizat.sm</div>
-</div>
-
-<!-- EQUIPES -->
-<div id="equipes" class="page">
-  <div class="inner-hdr">
-    <button class="back" onclick="show('home')">← Voltar</button>
-    <div>
-      <div class="inner-hdr-tag">Capacitação</div>
-      <div class="inner-hdr-name">Para Equipes de Atendimento</div>
-    </div>
-  </div>
-  <div class="inner-body">
-    <p class="inner-intro">O atendimento é o principal fator de fidelização em clínicas de saúde e estética. Este treinamento capacita sua equipe para transformar cada contato, do primeiro "oi" no WhatsApp à recepção presencial, em uma experiência que converte e fideliza.</p>
-    <div class="prods-label">Serviço disponível</div>
-    <div class="prods">
-      <div class="prod">
-        <div class="prod-name">Treinamento Atendimento ao Cliente</div>
-        <p class="prod-desc">Módulos práticos sobre como transformar o atendimento em estratégia de crescimento para clínicas. Sua equipe aprende a comunicar valor, lidar com objeções e criar uma experiência que o paciente recomenda.</p>
-        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Treinamento+Atendimento+ao+Cliente" target="_blank">Quero saber mais</a>
-      </div>
-    </div>
-  </div>
-  <div class="inner-foot">@analuizat.sm</div>
-</div>
-
-<!-- CLÍNICAS -->
-<div id="clinicas" class="page">
-  <div class="inner-hdr">
-    <button class="back" onclick="show('home')">← Voltar</button>
-    <div>
-      <div class="inner-hdr-tag">Serviços</div>
-      <div class="inner-hdr-name">Para Clínicas e Doutores</div>
-    </div>
-  </div>
-  <div class="inner-body">
-    <p class="inner-intro">Presença digital que posiciona sua clínica como referência. Trabalho estratégico de conteúdo, gestão e crescimento para médicos, dentistas, psicólogos e profissionais da saúde que enxergam o digital como investimento, não como custo.</p>
-    <div class="prods-label">Serviços disponíveis</div>
-    <div class="prods">
-      <div class="prod">
-        <div class="prod-name">Curadoria de Conteúdo</div>
-        <p class="prod-desc">Produção e curadoria de conteúdo estratégico para o perfil da sua clínica. Pautas, legendas e calendário editorial alinhados ao seu posicionamento e público-alvo, para que cada post comunique autoridade.</p>
-        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Curadoria+de+Conte%C3%BAdo" target="_blank">Quero saber mais</a>
-      </div>
-      <div class="prod">
-        <div class="prod-name">Aceleração para Clínica</div>
-        <p class="prod-desc">Diagnóstico e plano de ação para clínicas que querem crescer no digital com consistência. Do perfil ao agendamento, estratégia aplicada com resultado mensurável.</p>
-        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Acelera%C3%A7%C3%A3o+para+Cl%C3%ADnica" target="_blank">Quero saber mais</a>
-      </div>
-      <div class="prod">
-        <div class="prod-name">Gerenciamento de Redes</div>
-        <p class="prod-desc">Gestão completa das redes sociais da sua clínica: planejamento, produção de conteúdo, publicação e análise de desempenho. Você cuida dos pacientes, eu cuido da sua presença digital.</p>
-        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Gerenciamento+de+Redes" target="_blank">Quero saber mais</a>
-      </div>
-      <div class="prod">
-        <div class="prod-name">Gerenciamento + Mentoria de Atendimento</div>
-        <p class="prod-desc">Gestão completa das redes sociais combinada com mentoria estratégica para o atendimento da sua equipe. A experiência do paciente começa antes de entrar na clínica, e inclui cada mensagem que ela recebe.</p>
-        <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdyx0kBqifP7CEPO2O9enVDAQZG8Qp56VZXW6GCwwxlUhbZPQ/viewform?usp=pp_url&entry.1938668415=Gerenciamento+%2B+Mentoria+de+Atendimento" target="_blank">Quero saber mais</a>
-      </div>
-    </div>
-  </div>
-  <div class="inner-foot">@analuizat.sm</div>
 </div>
 
 <script>
